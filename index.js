@@ -32,7 +32,7 @@ class UploadfileWebpackPlugin {
     console.log(chalk.green('uploadfile success'))
   }
   apply(compiler) {
-    compiler.hooks.done.tapPromise(PLUGIN_NAME, execute)
+    compiler.hooks.done.tapPromise(PLUGIN_NAME, this.execute.bind(this))
   }
 }
 
