@@ -10,7 +10,8 @@ plugins: [
     username: 'username',
     password: 'password',
     localpath: 'localpath',
-    remotepath: 'remotepath'
+    remotepath: 'remotepath',
+    finishUpload: async()=>{}
   })
 ]
 ```

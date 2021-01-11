@@ -1,4 +1,3 @@
-const fs = require('fs')
 const chalk = require('chalk')
 const Client = new require('ssh2-sftp-client')
 const sftp = new Client()
@@ -25,8 +24,7 @@ class UploadfileWebpackPlugin {
     }).then(() => {
       return sftp.put(this.options.localpath, this.options.remotepath)
     }).then(res => {
-      console.log(res)
-      if (fs.existsSync(this.options.localpath)) fs.unlinkSync(this.options.localpath)
+      if (this.options.finishUpload) await this.options.finishUpload(res)
       return sftp.end()
     })
     console.log(chalk.green('uploadfile success'))

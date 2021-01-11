@@ -1,6 +1,6 @@
 {
   "name": "@luzhuokun/uploadfile-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "配合webpack打包后发送文件至服务器",
   "main": "index.js",
   "scripts": {
