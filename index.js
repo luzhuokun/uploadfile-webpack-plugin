@@ -23,7 +23,7 @@ class UploadfileWebpackPlugin {
       password: this.options.password
     }).then(() => {
       return sftp.put(this.options.localpath, this.options.remotepath)
-    }).then(res => {
+    }).then(async res => {
       if (this.options.finishUpload) await this.options.finishUpload(res)
       return sftp.end()
     })
