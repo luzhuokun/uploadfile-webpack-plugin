@@ -1,6 +1,6 @@
-const chalk = require('chalk')
-const Client = new require('ssh2-sftp-client')
+const Client = require('ssh2-sftp-client')
 const sftp = new Client()
+const chalk = require('chalk')
 class UploadfileWebpackPlugin {
   constructor(options) {
     this.options = options

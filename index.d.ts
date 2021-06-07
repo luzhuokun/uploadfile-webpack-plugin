@@ -13,3 +13,5 @@ declare class UploadfileWebpackPlugin {
   execute(compilation): void
   apply(compiler): void
 }
+
+export = UploadfileWebpackPlugin;
