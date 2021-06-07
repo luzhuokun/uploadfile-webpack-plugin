@@ -1,17 +1,17 @@
 {
   "name": "@luzhuokun/uploadfile-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "配合webpack打包后发送文件至服务器",
   "main": "index.js",
-  "scripts": {
-    "test": "node index.js"
-  },
+  "types": "index.d.ts",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luzhuokun/uploadfile-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
+    "webpack-plugin",
     "sftp"
   ],
   "author": "luzhuokun",
@@ -23,5 +23,6 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "ssh2-sftp-client": "^6.0.1"
-  }
+  },
+  "devDependencies": {}
 }
